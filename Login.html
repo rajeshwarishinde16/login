@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header and Footer Example</title>
+    <style>
+
+        body
+        {
+            margin: 0;
+            justify-content: center;
+
+        }
+
+        header {
+            background-color: #57a0e0;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        main {
+            padding: 20px;
+            margin-bottom: 50px; 
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #064249;
+            border-radius: 10%;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: black;
+        }
+
+        .div1{
+height:94vh;
+width:30%;
+background-color:#57a0e0;
+margin-left:35%;
+}
+input{
+margin-left:16%;
+border:none;
+border-bottom:1px solid black;
+width:70%;
+}
+b
+{
+margin-left:17%;
+}
+.jayesh{
+width:55%;
+height:7%;
+font-size:22px;
+margin-left:24%;
+color:black;
+
+}
+label{
+margin-left:16%;
+}
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <div>
+            <h1>AID MENTAL HEALTH CARE CENTER</h1>
+        </div>
+        <div class="button-container">
+            <button>Home</button>
+            <button>Blog</button>
+            <button>Login</button>
+            <button>Contact Us</button>
+        </div>
+    </header>
+
+ 
+    <main>
+        <script>
+            function cat()
+            {
+             var name=document.getElementById("i1").value;
+             var Password=document.getElementById("i2").value;
+             var a=document.getElementById("i3").value;
+              if(name=='')
+              {
+                alert("enter name");
+              }
+              if(Password=='' || Password.length!=8)
+              {
+                alert("enter 8 letters Password");
+              }
+              if(a.length!=10)
+              {
+                alert("enter right number");
+              }
+              if(name!='' && Password!='' && Password.length==8 && a.length==10)
+              {
+                      
+              }
+              else {
+            valid = false;
+        }
+
+       
+        if(valid) {
+            
+            document.getElementById('login').submit();
+        } else {
+           
+            event.preventDefault();
+        }
+              
+            }
+            </script>
+            <br><br><br><br>
+            <form action="intake.html" method="post" id="login">
+            <section class="div1"><br><br><h1 style="margin-left:34%;">--LOGIN--</h1><br><br>
+            <b><label="1">Name:</label></b><br><br>
+            <input type="text" name="r1" placeholder="Enter name" id="i1"><br><br>
+            <b><label="1">Email id:</label></b><br><br>
+            <input type="text" name="r2" placeholder="Enter Email id"><br><br>
+            <b><label="1">Password:</label></b><br><br>
+            <input type="text" name="r3" placeholder="Enter password" id="i2"><br><br>
+            <b><label="1">Contact No:</label></b><br><br>
+            <input type="number" name="r4" placeholder="Enter number" id="i3"><br>
+            <label>Forgot Password?</label><a href="BA.html"><label><u>Already login?</u></label></a><br><br><br>
+            <input type="submit" value="login" class="jayesh" onclick="cat(event)"><strong></strong></button></section ></center><br><br><br><br><br>
+            </form>
+                
+    </main>
+   
+
+</body>
+</html>
