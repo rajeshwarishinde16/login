@@ -1,6 +1,6 @@
 1.Header Section:
 
-* title "AID MENTAL HEALTH CARE CENTER."
+* title "MENTAL HEALTH CARE CENTER."
 * Contains four menu item in a navbar: "Home," "Blog," "Login," and "Contact Us".
   
 2.Main Section:
